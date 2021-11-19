@@ -40,14 +40,16 @@ final class Logs {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
+        // set answer
         final double myAnswer;
+        // input
         final Scanner myObj = new Scanner(System.in);
         System.out.print("Enter log length (0.25, 0.5 or 1): ");
-
+        // set length
         final float length = myObj.nextFloat();
-
+        // calculate
         myAnswer = (MAX / WEIGH) / length;
-
+        // output
         System.out.println("The truck will be able to take "
                  + myAnswer + " logs that are " + length
                  + " mether(s) in length.");
