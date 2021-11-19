@@ -13,7 +13,14 @@ import java.util.Scanner;
 */
 
 final class Logs {
-
+    /**
+    * Max take variable.
+    */
+    public static final double MAX = 1100;
+    /**
+    * Weigh variable.
+    */
+    public static final double WEIGH = 20;
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
@@ -22,14 +29,10 @@ final class Logs {
     * @throws IllegalStateException
     *
     */
+
     private Logs() {
         throw new IllegalStateException("Cannot be instantiated");
     }
-
-    /**
-    * Declaring MASS variable.
-    */
-    public static final double MASS = 55;
 
     /**
     * The starting main() function.
@@ -37,13 +40,16 @@ final class Logs {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
+        final double myAnswer;
         final Scanner myObj = new Scanner(System.in);
         System.out.print("Enter log length (0.25, 0.5 or 1): ");
 
         final float length = myObj.nextFloat();
 
+        myAnswer = (MAX / WEIGH) / length
+
         System.out.println("The truck will be able to take "
-                 + (MASS / length) + " logs that are " + length
+                 + myAnswer + " logs that are " + length
                  + " mether(s) in length.");
 
         System.out.println("\nDone.");
