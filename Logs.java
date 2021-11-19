@@ -46,7 +46,7 @@ final class Logs {
 
         final float length = myObj.nextFloat();
 
-        myAnswer = (MAX / WEIGH) / length
+        myAnswer = (MAX / WEIGH) / length;
 
         System.out.println("The truck will be able to take "
                  + myAnswer + " logs that are " + length
